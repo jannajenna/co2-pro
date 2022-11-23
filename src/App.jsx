@@ -1,9 +1,19 @@
 /* import { useState } from "react"; */
 
-function App() {
-  const [count, setCount] = useState(0);
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Main from "./components/Main";
 
-  return <div className="App"></div>;
+function App() {
+  /* const [count, setCount] = useState(0); */
+
+  return (
+    <div className="App">
+      <Header />
+      <Main />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
