@@ -1,17 +1,23 @@
 function Slide() {
+  function getNumber() {
+    let val = 0;
+    val = document.querySelector("input").value;
+    return val;
+  }
   return (
     <div className="slide">
-      <input type="range" min="0" max="8" steps="16" list="ticks" />
-      <datalist id="ticks">
-        <option value="0"></option>
-        <option value="1"></option>
-        <option value="2"></option>
-        <option value="3"></option>
-        <option value="4"></option>
-        <option value="5"></option>
-        <option value="6"></option>
-        <option value="7"></option>
-      </datalist>
+      <input type="range" min="0" max="4" step=".5" name="timeSpent" />
+      <ul className="range-labels">
+        <li>0</li>
+        <li>30 min</li>
+        <li>1 h</li>
+        <li>1.5 h</li>
+        <li>2 h</li>
+        <li>2.5 h</li>
+        <li>3 h</li>
+        <li>3.5 h</li>
+        <li>4 h</li>
+      </ul>
     </div>
   );
 }
