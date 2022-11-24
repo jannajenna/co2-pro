@@ -1,6 +1,6 @@
 function Btn(props) {
   console.log(props);
-  return <button className="btn">Calculate</button>;
+  return <button className="btn">{props.text}</button>;
 }
 
 export default Btn;
