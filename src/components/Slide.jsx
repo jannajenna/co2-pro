@@ -1,6 +1,10 @@
+import { Button } from "@mui/material";
+
 function Slide() {
   return (
     <div className="slide">
+      <Button variant="text">Text</Button>
+
       <input type="range" min="0" max="8" steps="16" list="ticks" />
       <datalist id="ticks">
         <option value="0"></option>
