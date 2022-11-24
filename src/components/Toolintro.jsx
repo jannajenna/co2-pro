@@ -1,16 +1,13 @@
-import Btn from "./Btn";
-import Content from "./Content";
+import Howto from "./Howto";
 import Intro from "./Intro";
+import Textintro from "./Textintro";
 
 function Toolintro() {
   return (
     <section className="tool-intro">
+      <Textintro />
       <Intro />
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" width="350" height="350">
-        <rect width="600" height="350" fill="#cccccc"></rect>
-      </svg>
-      <Btn text="Calculate" />
-      <Content />
+      <Howto />
     </section>
   );
 }

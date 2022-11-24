@@ -1,7 +1,7 @@
 function Slide() {
   return (
     <div className="slide">
-      <input type="range" min="0" max="8" steps="2" list="ticks" />
+      <input type="range" min="0" max="8" steps="16" list="ticks" />
       <datalist id="ticks">
         <option value="0"></option>
         <option value="1"></option>
