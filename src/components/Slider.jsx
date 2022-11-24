@@ -1,10 +1,11 @@
-export default function Slider() {
+import Slide from "./slide";
+
+export default function Slider(props) {
+  console.log(props);
   return (
     <>
-      <h3>TikTok</h3>
-      <div className="slider">
-        <input type="range" min="1" max="8" steps="1" />
-      </div>
+      <h3>{props.name}</h3>
+      <Slide />
     </>
   );
 }
